@@ -92,8 +92,10 @@ Question 9:
 Iterate through every penguin in the array and print the value of each penguin's name property to the console.
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
-for (let i = 0; i < penguins.length-1; i++) {
-  console.log(penguins[i].name);
+for (let i = 0; i < penguins.length; i++) {
+  if(penguins[i].name || penguins[i].character){
+    console.log(penguins[i].name || penguins[i].character);
+  }
 }
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
