@@ -43,6 +43,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 const penguins = [gunter, ramon, fred];
 console.log(penguins);
 
+
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 Question 2: 
 Access the first penguin in the list and print it to the console using console.log() -- notice that you can see all the properties and methods of that object listed in the console! (Hint: remember that array indexes start counting at 0, not 1!)
@@ -102,7 +103,10 @@ for (let i = 0; i < penguins.length; i++) {
 Question 10: 
 Write a for loop to call the sayHello method of every penguin in the array!
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-for(let i = 0; i < penguins.length-1; i++) {
+penguins[3].sayHello = function() {
+  console.log("Guten Tag");
+} 
+for(let i = 0; i < penguins.length; i++) {
   penguins[i].sayHello();
 }
 
